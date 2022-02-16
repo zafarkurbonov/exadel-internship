@@ -16,7 +16,7 @@ jobs:
     - name: Print the list of files/directories in github repository
       run: ls
     - name: Print content of log.txt file
-      run: cat "C:\Users\user\IdeaProjects\exadel-internship\Task1\log.txt"
+      run: cat "C:/Users/user/IdeaProjects/exadel-internship/Task1/log.txt"
     - name: Print content of log.txt file
       run: echo "Hello from $DEPLOY_VER"
   second-job:
