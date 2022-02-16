@@ -1,0 +1,61 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\user\IdeaProjects\exadel-internship> git log
+commit 136d2d7c8afc35747e0ca546d5e840849645fad9 (HEAD -> main, origin/main, origin/HEAD)
+Merge: aca5bd0 0664510
+Author: ZKurbonov <zkurbonov@exadel.com>
+Date:   Wed Feb 16 10:29:05 2022 +0500
+
+    Merge branch 'main' of https://github.com/zafarkurbonov/exadel-internship
+
+commit aca5bd0b5b541c385d01cfb96654efa39f13ea5d (origin/zkurbonov-new-feature)
+Author: ZKurbonov <zkurbonov@exadel.com>
+Date:   Wed Feb 16 10:12:57 2022 +0500
+
+    ignore files starting with dot
+
+commit 0664510c994d94f6667ffeadcb8a62e4a85ab299
+Merge: fe34a4b 8ab2e3a
+Author: Zafar Kurbonov <Zafarchik29@gmail.com>
+Date:   Tue Feb 15 23:13:54 2022 +0500
+
+    Merge pull request #2 from zafarkurbonov/dev
+
+    Merge dev to main
+
+commit 8ab2e3a55837cc01db826fc0181d143737aa8a12
+Merge: cab7f72 14d5f16
+Author: Zafar Kurbonov <Zafarchik29@gmail.com>
+Date:   Tue Feb 15 23:12:53 2022 +0500
+
+    Merge pull request #1 from zafarkurbonov/zkurbonov-new-feature
+
+    created new branch, added gitignore file, ignored all files starting …
+
+commit 14d5f16cd0bf4729c4f1167847de6670725c1f37
+Author: ZKurbonov <zkurbonov@exadel.com>
+Date:   Tue Feb 15 23:09:15 2022 +0500
+
+    created new branch, added gitignore file, ignored all files starting from '.'
+
+commit cab7f7253ccbcb37306f998cb7c5e998a6732f9b
+Author: ZKurbonov <zkurbonov@exadel.com>
+Date:   Tue Feb 15 22:56:47 2022 +0500
+
+    added any file to dev branch
+
+commit fe34a4b7589fd1a2527612adb5424d93913999cf
+Author: ZKurbonov <zkurbonov@exadel.com>
+Date:   Tue Feb 15 22:52:00 2022 +0500
+
+    Added Task1 folder and README file
+
+commit 82d155eb7ca821e07a69e87f60b61eecf220e95f
+Author: Zafar Kurbonov <Zafarchik29@gmail.com>
+Date:   Tue Feb 15 22:46:17 2022 +0500
+
+    Initial commit
+(END)
