@@ -1,4 +1,9 @@
 name: Github Actions Testing
+  on:
+    push:
+      branches:
+        - main
+        - dev
   env:
     DEPLOY_VER: SHA
     YEAR: 2020
