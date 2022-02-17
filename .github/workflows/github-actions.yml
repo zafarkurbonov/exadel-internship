@@ -14,7 +14,7 @@ jobs:
       DEPLOY_VER: SHA
     steps:
     - name: Print the list of files/directories in github repository
-      run: ls -a
+      run: ls
     - name: Print content of log.txt file
       run: pwd
     - name: after cd...
