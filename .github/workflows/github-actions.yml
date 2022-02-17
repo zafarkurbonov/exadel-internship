@@ -36,4 +36,5 @@ jobs:
         DAY__OF_THE_MONTH : 28
       
     - name: Keep secret favorite day of the week
+      run: echo "My favorite day of week is ${{ secret.FAVORITE_DAY_OF_WEEK}}"
       
