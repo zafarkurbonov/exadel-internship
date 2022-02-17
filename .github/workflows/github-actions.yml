@@ -1,17 +1,15 @@
 name: Github Actions Testing
-'on':
+on:
   push:
     branches:
       - main
       - dev
 env:
-  DEPLOY_VER: SHA
-  YEAR: 2020
+  DEPLOY_VER: "${{github.sha}}"
+  YEAR: "2020"
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    env:
-      DEPLOY_VER: SHA
     steps:
     - name: Print the list of files/directories in github repository
       run: ls
