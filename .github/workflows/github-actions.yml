@@ -28,7 +28,7 @@ jobs:
     - name: Print the system date and time
       run: date
     - name: Print the variable's content
-      run: 
+      run: |
         echo "Day is ${{env.DAY__OF_THE_MONTH}}"
         echo "Month is ${{env.MONTH}}"
         echo "Year is ${{env.YEAR}}"
