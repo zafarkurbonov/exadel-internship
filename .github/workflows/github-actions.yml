@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print the list of files/directories in github repository
-      run: ls
+      run: ls -la
     - name: Print content of log.txt file
       run: echo log.txt
     - name: Print hello from env variable
