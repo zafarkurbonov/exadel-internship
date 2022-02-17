@@ -17,7 +17,7 @@ jobs:
       run: ls
     - name: Print content of log.txt file
       run: echo log.txt
-    - name: Print content of log.txt file
+    - name: Print hello from env variable
       run: echo "Hello from $DEPLOY_VER"
   second-job:
     runs-on: ubuntu-latest
