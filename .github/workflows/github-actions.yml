@@ -14,7 +14,7 @@ jobs:
       DEPLOY_VER: SHA
     steps:
     - name: Print the list of files/directories in github repository
-      run: ls   
+      run: ls -R
     - name: Print content of log.txt file
       working-directory: Task1
       run: cat log.txt
