@@ -18,7 +18,7 @@ jobs:
     - name: Print content of log.txt file
       run: pwd
     - name: after cd...
-      run: cd .\exadel-internship\
+      run: cd ./exadel-internship/
     - name: after pwd
       run: pwd
     - name: Print Hello from env variable
