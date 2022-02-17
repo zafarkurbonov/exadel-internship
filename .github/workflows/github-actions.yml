@@ -14,9 +14,9 @@ jobs:
     - name: Print the list of files/directories in github repository
       run: ls
     - name: Print content of log.txt file
-      run: cat log.txt
+      run: echo log.txt
     - name: Print hello from env variable
-      run: echo "Hello from $DEPLOY_VER"
+      run: echo "Hello from ${{ env.DEPLOY_VER }}"
   second-job:
     runs-on: ubuntu-latest
     env:
