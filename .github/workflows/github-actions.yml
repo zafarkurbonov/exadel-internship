@@ -33,5 +33,7 @@ jobs:
         echo "Month is ${{env.MONTH}}"
         echo "Year is ${{env.YEAR}}"
       env: 
-        DAY__OF_THE_MONTH : Friday
+        DAY__OF_THE_MONTH : 28
+      
+    - name: Keep secret favorite day of the week
       
