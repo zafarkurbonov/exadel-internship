@@ -35,10 +35,9 @@ jobs:
       env: 
         DAY__OF_THE_MONTH : 28
       
-      
     - name: Keep secret favorite day of the week
       env: 
-        FAVORITE_DAY_OF_WEEK: ${{ secrets.FAVORITE_DAY_OF_WEEK }}
-      run: echo "My favorite day of week is ${{ env.FAVORITE_DAY_OF_WEEK }}"
+        FAVORITE_DAY_OF_WEEK: "${{secrets.FAVORITE_DAY_OF_WEEK}}"
+      run: echo "My favorite day of week is ${{env.FAVORITE_DAY_OF_WEEK}}"
      
       
