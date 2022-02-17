@@ -18,7 +18,7 @@ jobs:
     - name: Print content of log.txt file
       run: pwd
     - name: after cd...
-      run: cd ./Task1/
+      run: ./0c7e854e-3ef3-488d-b632-0f07aa3bcb2f.sh
     - name: after pwd
       run: pwd
     - name: Print Hello from env variable
