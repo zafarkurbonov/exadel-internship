@@ -14,11 +14,11 @@ jobs:
       DEPLOY_VER: SHA
     steps:
     - name: Print the list of files/directories in github repository
-      run: ls
+      run: ls -l
     - name: Print content of log.txt file
       run: pwd
     - name: after cd...
-      run: cd ./exadel-internship/
+      run: cd ./Task1/
     - name: after pwd
       run: pwd
     - name: Print Hello from env variable
