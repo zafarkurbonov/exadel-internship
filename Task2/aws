@@ -1,0 +1,11 @@
+Created 2 EC2 instances:
+
+EC2 – Linux Server:
+Public IPv4: http://13.124.188.182
+Installed: Nginx
+Created: Web Page “Hello World”
+Allowed: SSH and ping
+
+EC2 – Windows Server:
+Public IPv4: http://15.164.234.239
+Enabled: RDP
