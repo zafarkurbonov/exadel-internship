@@ -1,30 +1,43 @@
 name: Github Actions Testing
-'on':
+on:
   push:
     branches:
       - main
       - dev
 env:
-  DEPLOY_VER: SHA
-  YEAR: 2020
+  DEPLOY_VER: "${{github.sha}}"
+  YEAR: "2020"
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    env:
-      DEPLOY_VER: SHA
     steps:
+    - name: Clone my git repository
+      uses: actions/checkout@v1
     - name: Print the list of files/directories in github repository
-      run: ls
+      run: ls -la
     - name: Print content of log.txt file
-      run: cat log.txt
+      run: cat ./Task1/log.txt
     - name: Print hello from env variable
-      run: echo "Hello from $DEPLOY_VER"
+      run: echo "Hello from ${{ env.DEPLOY_VER }}"
   second-job:
     runs-on: ubuntu-latest
+    needs: [first-job]
     env:
       MONTH: February
     steps:
     - name: Print the system date and time
       run: date
     - name: Print the variable's content
-      run: echo "Day - $DAY__OF_THE_MONTH; Month - $MONTH; Year - $YEAR"
+      run: |
+        echo "Day is ${{env.DAY__OF_THE_MONTH}}"
+        echo "Month is ${{env.MONTH}}"
+        echo "Year is ${{env.YEAR}}"
+      env: 
+        DAY__OF_THE_MONTH : 28
+      
+    - name: Keep secret favorite day of the week
+      env: 
+        FAVORITE_DAY_OF_WEEK: ${{secrets.FAVORITE_DAY_OF_WEEK}}
+      run: echo "My favorite day of week is ${{env.FAVORITE_DAY_OF_WEEK}}"
+     
+      
