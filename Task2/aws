@@ -1,11 +1,10 @@
 Created 2 EC2 instances:
 
-EC2 – Linux Server:
-Public IPv4: http://13.124.188.182
-Installed: Nginx
-Created: Web Page “Hello World”
-Allowed: SSH and ping
-
-EC2 – Windows Server:
-Public IPv4: http://15.164.234.239
-Enabled: RDP
+1. Создал AWS аккаунт
+2. Посмотрел про цены и тариф
+3. Создал 2 интанса (Windows, Linux) и поиграл с ними - стартовал, стоп...
+4. SSH connection сделал через свою машину к линухе (IP - 13.124.188.182)
+5. pinganul с одной инстанса к другой,  конфигурации SSH ключа сделал через puttygen
+6. Установил nginx на линухе, создал веб страницу, поставил кнопку на странице где при нажатии показывет OS Version
+  - Через интернет этот веб страница доступна
+  - через виндовс интсанса тоже проверил веб страницу и показывает
